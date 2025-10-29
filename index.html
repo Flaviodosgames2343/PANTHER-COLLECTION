@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PANTHER COMPANY</title>
+  <meta name="description" content="PANTHER - Moda streetwear com estilo único e autêntico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader" class="loader" aria-hidden="false">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#home" aria-label="PANTHER HOME">
+          <img src="file:///C:/Users/user/Downloads/Projeto%20Remover%20fundo%20(99).png" alt="PANTHER Logo">
+        </a>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="nav-main" id="navMain" aria-label="Navegação principal">
+        <a href="#shop" class="nav-link">SHOP</a>
+        <a href="#inside-PANTHER" class="nav-link">INSIDE PANTHER</a>
+      </nav>
+
+      <!-- Search Bar (Expandable) -->
+      <div class="search-bar" id="searchBar">
+        <input 
+          type="text" 
+          id="searchInput" 
+          class="search-input" 
+          placeholder="Buscar produtos..."
+          aria-label="Buscar produtos"
+        >
+        <button class="search-close" id="searchClose" aria-label="Fechar busca">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Adicionado botão de alternância de tema -->
+        <button class="icon-btn" id="themeToggle" aria-label="Alternar tema">
+          <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="icon-btn" id="searchBtn" aria-label="Buscar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+        </button>
+        <button class="icon-btn cart-btn" id="cartBtn" aria-label="Carrinho de compras">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-content">
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Fechar menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <nav class="mobile-nav">
+        <a href="#shop" class="mobile-nav-link">SHOP</a>
+        <a href="#inside-buss" class="mobile-nav-link">INSIDE PANTHER</a>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- Hero Carousel -->
+  <section class="hero-carousel" id="heroCarousel" aria-label="Destaques">
+    <div class="carousel-container">
+      <div class="carousel-track" id="carouselTrack">
+        <!-- Slide 1 -->
+        <div class="carousel-slide active">
+          <img src="https://i.pinimg.com/736x/3f/f4/6d/3ff46df550176b474c31867c29cb1df4.jpg" alt="Coleção Bussfly">
+          <div class="carousel-overlay"></div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-slide">
+          <img src="Untitled Project (7).png" alt="Nova Coleção">
+          <div class="carousel-overlay"></div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-slide">
+          <img src="Untitled Project (5).png" alt="Estilo Urbano">
+          <div class="carousel-overlay"></div>
+        </div>
+      </div>
+
+      <!-- Carousel Navigation -->
+      <button class="carousel-nav carousel-prev" id="carouselPrev" aria-label="Slide anterior">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <button class="carousel-nav carousel-next" id="carouselNext" aria-label="Próximo slide">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+      <!-- Carousel Indicators -->
+      <div class="carousel-indicators" id="carouselIndicators">
+        <button class="indicator active" data-slide="0" aria-label="Ir para slide 1"></button>
+        <button class="indicator" data-slide="1" aria-label="Ir para slide 2"></button>
+        <button class="indicator" data-slide="2" aria-label="Ir para slide 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Shop Section -->
+    <section class="shop-section" id="shop">
+      <div class="container">
+        <h2 class="section-title">SHOP</h2>
+        
+        <!-- Filters -->
+        <div class="filters">
+          <div class="filter-group">
+            <label for="categoryFilter" class="visually-hidden">Filtrar por categoria</label>
+            <select id="categoryFilter" class="filter-select">
+              <option value="">Todas as categorias</option>
+              <option value="camisetas">Camisetas</option>
+              <option value="moletons">Moletons</option>
+              <option value="calcas">Calças</option>
+              <option value="acessorios">Acessórios</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="sortFilter" class="visually-hidden">Ordenar produtos</label>
+            <select id="sortFilter" class="filter-select">
+              <option value="default">Ordenar por</option>
+              <option value="price-asc">Menor preço</option>
+              <option value="price-desc">Maior preço</option>
+              <option value="newest">Mais recentes</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="productsGrid">
+          <!-- Product Card 1 -->
+          <article class="product-card" data-category="camisetas" data-price="100.99" data-date="2025-01-15">
+            <div class="product-image">
+              <img src="SISTEMA (1).png" alt="Camiseta PANTHER Branca">
+              <button class="wishlist-btn" aria-label="Adicionar aos favoritos">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Blusa Lost PANTHER </h3>
+              <p class="product-price">R$ 100,99</p>
+              <div class="color-options">
+                <button class="cor-btn active" aria-label="Cor branca">
+                  <img src="SISTEMA (2).png" alt="Branco">
+                </button>
+                <button class="cor-btn" aria-label="Cor preta"> 
+                  <img src="CAMISA (16).png" alt="Preto">
+                </button>
+                <button class="cor-btn" aria-label="Cor preta"> 
+                  <img src="CAMISA (15).png" alt="Preto">
+              </div>
+              <button class="btn-primary add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <!-- Product Card 2 -->
+          <article class="product-card" data-category="camiseta" data-price="99.90" data-date="2025-01-05">
+            <div class="product-image">
+              <img src="CAMISA (14).png" alt="Camiseta A Moda Que Eu Lanço">
+              <button class="wishlist-btn" aria-label="Adicionar aos favoritos">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Camiseta A Moda Que Eu Lanço</h3>
+              <p class="product-price">R$ 99,90</p>
+              <div class="color-options">
+                <button class="cor-btn active" aria-label="Cor branca">
+                  <img src="CAMISA (12).png" alt="Branco">
+                </button>
+                <button class="cor-btn" aria-label="Cor preta">
+                  <img src="CAMISA (14).png" alt="Preto">
+<button class="cor-btn" aria-label="Cor preta">
+                  <img src="WhatsApp Image 2025-10-28 at 17.28.43.jpeg" alt="Preto">
+                </button>
+              </div>
+              <button class="btn-primary add-to-cart">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coleção Section -->
+    <section class="colecao-section" id="colecao">
+      <div class="container">
+        <h2 class="section-title">COLEÇÃO</h2>
+        <p class="section-subtitle">Peças em destaque da nossa coleção exclusiva</p>
+        
+        <div class="colecao-grid">
+          <article class="colecao-item">
+            <div class="colecao-image">
+              <img src="" alt="Coleção A Moda Que Eu Lanço">
+            </div>
+            <div class="colecao-info">
+              <h3 class="colecao-name">A Moda Que Eu Lanço</h3>
+              <p class="colecao-description">Camisetas exclusivas com design autêntico e atitude urbana</p>
+              <a href="#shop" class="btn-secondary">Ver Coleção</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Inside Buss Section -->
+    <section class="inside-buss-section" id="inside-PANTHER">
+      <div class="container">
+        <h2 class="section-title">INSIDE PANTHER</h2>
+        <div class="inside-content">
+          <p class="inside-text">
+          PANTHER é mais do que uma marca de streetwear. Somos uma comunidade que celebra a autenticidade, 
+            a criatividade e o estilo urbano. Cada peça é cuidadosamente desenvolvida para expressar 
+            personalidade e atitude.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Footer Navigation -->
+      <div class="footer-section">
+        <h3 class="footer-title">Navegação</h3>
+        <nav class="footer-nav">
+          <a href="#shop" class="footer-link">SHOP</a>
+          <a href="#inside-buss" class="footer-link">INSIDE PANTHER</a>
+        </nav>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-section">
+        <h3 class="footer-title">Entre em contato</h3>
+        <div class="footer-contact">
+          <a href="https://wa.me/5516992445457" class="footer-link whatsapp-link" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+            WhatsApp
+          </a>
+          <p class="footer-phone">+55 16 99244-5457</p>
+          <a href="mailto:contato@PANTHER-company.com.br" class="footer-link">contato@PANTHER-collection.com.br</a>
+        </div>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-section">
+        <h3 class="footer-title">Redes Sociais</h3>
+        <div class="social-links">
+          <a href="https://www.instagram.com/noface_company" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.057-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-4.358-.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Projeto%20Remover%20fundo%20%2894%29-qyQa9x396sVJB8qbI8uuwsBfIvQFze.png" alt="PANTHER">
+        </div>
+        <p class="copyright">Copyright PANTHER - 09457968000125 - 2025. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <aside class="cart-sidebar" id="cartSidebar" aria-hidden="true">
+    <div class="cart-header">
+      <h2 class="cart-title">Carrinho</h2>
+      <button class="cart-close" id="cartClose" aria-label="Fechar carrinho">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty">Seu carrinho está vazio</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">R$ 0,00</span>
+      </div>
+      <button class="btn-primary btn-checkout" id="checkoutBtn">Finalizar Compra</button>
+    </div>
+  </aside>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/5516997033586" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contato via WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
